@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:lts' }  // Use Node.js Docker image as the build agent
+        label 'docker' // Use Node.js Docker image as the build agent
     }
 
     stages {
